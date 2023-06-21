@@ -1,0 +1,65 @@
+body {
+    margin: 50px;
+}
+
+header {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+hr {
+    color: #7d97ad;
+    background-color: #7d97ad;
+    height: 2px;
+}
+a{
+    text-decoration: none;
+    color: #7d97ad;
+}
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.align-center {
+    align-content: center;
+}
+.text-center{
+    text-align: center;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.width-30{
+    width: 30%;
+}
+
+.margin-0 {
+    margin: 0%;
+}
+
+.text-right {
+    text-align: right;
+}
+.color-7d97ad{
+    color: #7d97ad;
+}
