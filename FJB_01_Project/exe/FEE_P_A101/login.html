@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+  <body>
+    <!-- login box -->
+    <div class="abstract_outline">
+      <div class="login_box">
+        <!-- header login-->
+        <div class="header_login">Please Sign In</div>
+        <!-- body login -->
+        <div class="body_login">
+          <form action="#">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="E-mail"
+              />
+            </div>
+            <div class="input-group">
+              <input
+                type="password"
+                class="form-control"
+                placeholder="Password"
+              />
+            </div>
+            <div class="input-group">
+              <input
+                type="checkbox"
+                id="isRemeber"
+                name="isRemeber"
+                value="isRemember"
+              />
+              <label style="margin-left: 5px;" for="isRemeber">Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-success btn-block">
+              Login
+            </button>
+          </form>
+        </div>
+        <!-- footer login -->
+        <div class="footer_login">
+          <a href="#">Click here to Register</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
