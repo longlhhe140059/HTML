@@ -10,48 +10,60 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/login.css" />
+    <!-- <link rel="stylesheet" href="./css/login.css" /> -->
   </head>
   <body>
     <!-- login box -->
-    <div class="abstract_outline">
-      <div class="login_box">
-        <!-- header login-->
-        <div class="header_login">Please Sign In</div>
-        <!-- body login -->
-        <div class="body_login">
-          <form action="#">
-            <div class="input-group">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="E-mail"
-              />
+    <div class="abstract_outline container">
+      <div class="row justify-content-center align-items-center vh-100">
+        <div class="login_box border rounded col shadow-sm">
+          <!-- header login-->
+          <div class="header_login row border-bottom">
+            <div class="col pt-2 pb-2">Please Sign In</div>
+          </div>
+          <!-- body login -->
+          <div class="body_login row">
+            <div>
+              <form action="#" method="post">
+                <div class="input-group mt-3">
+                  <input
+                    type="text"
+                    name="email"
+                    class="form-control"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <div class="input-group mt-3">
+                  <input
+                    type="password"
+                    name="password"
+                    class="form-control"
+                    placeholder="Password"
+                  />
+                </div>
+                <div class="input-group mt-3">
+                  <input
+                    type="checkbox"
+                    id="isRemeber"
+                    name="isRemeber"
+                    value="isRemember"
+                  />
+                  <label style="margin-left: 5px" for="isRemeber"
+                    >Remember me</label
+                  >
+                </div>
+                <div>
+                  <button type="submit" class="btn btn-success btn-block w-100">
+                    Login
+                  </button>
+                </div>
+              </form>
             </div>
-            <div class="input-group">
-              <input
-                type="password"
-                class="form-control"
-                placeholder="Password"
-              />
-            </div>
-            <div class="input-group">
-              <input
-                type="checkbox"
-                id="isRemeber"
-                name="isRemeber"
-                value="isRemember"
-              />
-              <label style="margin-left: 5px;" for="isRemeber">Remember me</label>
-            </div>
-            <button type="submit" class="btn btn-success btn-block">
-              Login
-            </button>
-          </form>
-        </div>
-        <!-- footer login -->
-        <div class="footer_login">
-          <a href="#">Click here to Register</a>
+          </div>
+          <!-- footer login -->
+          <div class="footer_login row">
+            <a href="#">Click here to Register</a>
+          </div>
         </div>
       </div>
     </div>
