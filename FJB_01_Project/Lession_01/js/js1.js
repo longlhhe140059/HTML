@@ -1,5 +1,3 @@
-
-
 // falsy_truthy
 // false = 0, null, undefine, '', NaN
 // NaN happend when there are string use with calculator -, /, *, ...
@@ -11,19 +9,49 @@ console.log(1 == '1') // true
 console.log(1 === 1) // true
 console.log(1 === '1') // false
 */
-p
 // declare function
-function sum(num1,num2){
-    console.log('this is sum:'+(num1 + num2))
-    return num1 + num2;
+function sum(num1, num2) {
+  console.log("this is sum:" + (num1 + num2));
+  return num1 + num2;
 }
 
 // expression function need to be created before you call
-const sum1 = function(num1,num2){
-    console.log('this is sum1:'+(num1+num2))
-}
+const sum1 = function (num1, num2) {
+  console.log("this is sum1:" + (num1 + num2));
+};
 
 // arrow function ()=>
-const sum2 = (num1,num2)=>{
-    console.log('this is sum2:'+(num1+num2))
+const sum2 = (num1, num2) => {
+  console.log("this is sum2:" + (num1 + num2));
+};
+
+// call back function
+function handleNumber(num, callback) {
+  const newNum = callback(num);
+  return newNum;
 }
+// console.log(handleNumber(3, num => num*2));
+// console.log(handleNumber(3, num => num**2));
+
+// object
+const st = {
+  id: 0,
+  2: "test",
+  temp: "ok",
+};
+
+for (const prop in st) {
+  console.log(prop, st[prop]);
+  if (prop == "temp") {
+    delete st[prop];
+    console.log("remove " + prop);
+  }
+}
+//shallow copy
+const student1 = st;
+//deep copy
+const student2 = { ...student1, id: 2 };
+
+// '' "" ``
+// String template: ``
+console.log(`student id: ${student1.id}`)
