@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <!-- <link rel="stylesheet" href="./css/login.css" /> -->
+    <script src="./js/javascript.js"></script>
   </head>
   <body>
     <!-- login box -->
@@ -24,8 +25,8 @@
           <!-- body login -->
           <div class="body_login row">
             <div>
-              <form action="#" method="post">
-                <div class="input-group mt-3">
+              <form action="" method="get" name="login-form" onsubmit=" return checklogin()">
+                <div id="email-container" class="input-group mt-3">
                   <input
                     type="text"
                     name="email"
@@ -33,7 +34,7 @@
                     placeholder="E-mail"
                   />
                 </div>
-                <div class="input-group mt-3">
+                <div id="password-container" class="input-group mt-3">
                   <input
                     type="password"
                     name="password"
