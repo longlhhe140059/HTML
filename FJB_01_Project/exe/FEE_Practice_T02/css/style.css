@@ -1,0 +1,40 @@
+body {
+    background-color: #003f69;
+}
+
+.input-group>input {
+    border-radius: 0px;
+}
+
+.form-select {
+    border-radius: 0%;
+}
+
+.form-control {
+    border-radius: 0%;
+}
+
+textarea {
+    resize: none;
+}
+
+.guide_line {
+    color: #8f8b9e;
+    font-size: small;
+}
+
+.orange_button {
+    background-color: orange;
+    color: #f9f9f9;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+input::file-selector-button{
+    display: none;
+}
+.file_button{
+    border-radius: 0%;
+    background-color: orange;
+    color: #f9f9f9;
+}
+

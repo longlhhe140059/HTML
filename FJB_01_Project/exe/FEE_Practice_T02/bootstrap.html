@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    
+  </head>
+  <body>
+    <header class="d-flex justify-content-center mb-5">
+      <h1 class="text-light">Job Application Form Widget</h1>
+    </header>
+    <!-- onsubmit="return validateForm()" -->
+    <form class="container bg-light pb-4" name="job_form" id="job_form" method="get"  action="">
+      <div class="col p-2">
+        <div class="row">
+          <div class="col p-2" id="first_name_container">
+            <div class="input-group" >
+              <input
+                type="text"
+                name="first_name"
+                class="form-control"
+                placeholder="First name"
+              />
+            </div>
+          </div>
+          <div class="col p-2" id="last_name_container">
+            <div class="input-group">
+              <input type="text" name="last_name" class="form-control" placeholder="Last name"/>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col p-2" id="email_container">
+            <div class="input-group">
+              <input type="text" name="email" class="form-control" placeholder="Email" />
+            </div>
+          </div>
+          <div class="col p-2" id="phone_container">
+            <div class="input-group">
+              <input type="text" name="phone" class="form-control" placeholder="Phone" />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col p-2" id="country_container">
+            <div class="input-group">
+              <select class="form-select" id="country_select" name="country_select">
+                <option value="" selected>Select country</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col p-2">
+            <div class="input-group">
+              <input type="text" name="city" class="form-control" placeholder="City" />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col p-2">
+            <div class="input-group">
+              <input type="text" name="address" class="form-control" placeholder="Address" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row ps-2 pe-2">
+        <div class="col p-2" id="position_container">
+          <div class="input-group">
+            <select class="form-select" id="position_select" name="position_select">
+              <option value="" selected>Choose desired position</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row ps-2 pe-2">
+        <div class="col p-2">
+          <div class="input-group">
+            <textarea
+                name="addition_info"
+              class="form-control"
+              placeholder="Addition info"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row ps-2 pe-2">
+        <div class="col p-2">
+          <div class="input-group file-group">
+            <input type="file" class="form-control" id="fileInput" name="fileInput" title="Add your CV">
+            <label class="input-group-text file_button" for="fileInput">Browse</label>
+          </div>
+          <div class="guide_line">
+            Only: pdf/doc Size: lessthan 1 Mb
+        </div>
+      </div>
+      <div class="d-flex ps-2 pe-2 justify-content-end">
+        <div class="p-2">
+            <input type="button" class="orange_button" value="Reset">
+        </div>
+        <div class="p-2">
+            <input type="submit" class="orange_button" value="Send">
+        </div>
+      </div>
+    </form>
+
+    <script src="./js/javascript.js"></script>
+  </body>
+</html>
